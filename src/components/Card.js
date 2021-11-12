@@ -4,22 +4,22 @@ import { donateToCampaign, getAllCampaigns, withdraw } from "../solana";
 const Card = ({ data, setCards }) => {
     const [amount, setAmount] = useState(0);
     const onDonate = async (e) => {
-        e.preventDefault();
-        await donateToCampaign(data.id, amount);
-        let newCards = await getAllCampaigns();
-        setCards(newCards);
+        // e.preventDefault();
+        // await donateToCampaign(data.id, amount);
+        // let newCards = await getAllCampaigns();
+        // setCards(newCards);
     }
     const onWithdraw = async (e) => {
-        e.preventDefault();
-        try {
-            await withdraw(data.id, amount);
-            alert('Withdraw successful!');
-        } catch (e) {
-            console.log(e);
-            alert("only admin can withdraw");
-        }
-        let newCards = await getAllCampaigns();
-        setCards(newCards);
+        // e.preventDefault();
+        // try {
+        //     await withdraw(data.id, amount);
+        //     alert('Withdraw successful!');
+        // } catch (e) {
+        //     console.log(e);
+        //     alert("only admin can withdraw");
+        // }
+        // let newCards = await getAllCampaigns();
+        // setCards(newCards);
 
     }
     return (

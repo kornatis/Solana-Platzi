@@ -7,12 +7,12 @@ import { getAllCampaigns } from "./solana";
 const App = () => {
   const [route, setRoute] = useState(0);
   const [cards, setCards] = useState([]);
-  useEffect(() => {
-    getAllCampaigns().then((val) => {
-      setCards(val);
-      console.log(val);
-    });
-  }, []);
+  // useEffect(() => {
+  //   getAllCampaigns().then((val) => {
+  //     setCards(val);
+  //     console.log(val);
+  //   });
+  // }, []);
   return (
     <div className="ui container">
       <Header setRoute={setRoute} />
@@ -35,9 +35,9 @@ const App = () => {
         :
         <Form setRoute={(e) => {
           setRoute(e);
-          getAllCampaigns().then((val) => {
-            setCards(val);
-          });
+          // // getAllCampaigns().then((val) => {
+          // //   setCards(val);
+          // });
         }} />
       }
     </div>

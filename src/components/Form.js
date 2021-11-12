@@ -6,9 +6,9 @@ const Form = ({setRoute}) => {
     const [image, setImageLink] = useState('')
 
     const onSubmit = async (e) => {
-        e.preventDefault();
-        await createCampaign(name, description, image);
-        setRoute(0);
+        // e.preventDefault();
+        // await createCampaign(name, description, image);
+        // setRoute(0);
     }
 
     return (
